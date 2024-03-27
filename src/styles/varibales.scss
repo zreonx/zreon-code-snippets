@@ -1,0 +1,14 @@
+@mixin centerVertical() {
+  align-items: center;
+}
+
+@mixin centerHorizontal() {
+  justify-content: center;
+}
+
+.flex-center {
+  display: flex;
+
+  @include centerVertical;
+  @include centerHorizontal;
+}
